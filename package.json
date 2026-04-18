@@ -1,0 +1,57 @@
+{
+  "name": "@console-one/disambiguator",
+  "version": "0.1.0",
+  "description": "Heap-based probabilistic decision-tree executor. Traverses weighted nodes in parallel; propagates probabilities from leaves to root via AND/OR/NOT switches; prunes dead branches. Pluggable leaf validators and storage.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/console-one/disambiguator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/console-one/disambiguator/issues"
+  },
+  "homepage": "https://github.com/console-one/disambiguator#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "ORIGINAL_README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "smoke": "node dist/smoke.js",
+    "test": "npm run smoke",
+    "prepublishOnly": "npm run clean && npm run build && npm run smoke"
+  },
+  "keywords": [
+    "disambiguator",
+    "decision-tree",
+    "probability",
+    "priority-queue",
+    "authorization",
+    "classifier",
+    "weighted-evaluation",
+    "probabilistic"
+  ],
+  "author": "Andrew Chalmers",
+  "contributors": [
+    "Jayden Nikifork"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^20.0.0"
+  },
+  "dependencies": {
+    "heap-js": "^2.7.1"
+  }
+}
