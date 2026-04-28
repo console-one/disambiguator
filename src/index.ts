@@ -26,6 +26,7 @@ export {
   Condition,
   NodeType
 } from './types.js'
+
 export type {
   Validation,
   NodeFn,
