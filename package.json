@@ -1,6 +1,6 @@
 {
   "name": "@console-one/disambiguator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Heap-based probabilistic decision-tree executor. Traverses weighted nodes in parallel; propagates probabilities from leaves to root via AND/OR/NOT switches; prunes dead branches. Pluggable leaf validators and storage.",
   "repository": {
     "type": "git",
